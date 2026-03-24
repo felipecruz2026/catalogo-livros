@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo de Livros</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>📚 Catálogo de Livros</h1>
+
+<!-- MENU -->
+<nav>
+  <button onclick="mostrarTela('lista')">Livros</button>
+  <button onclick="mostrarTela('carrinho')">Carrinho</button>
+  <button onclick="mostrarTela('contato')">Contato</button>
+  <button onclick="mostrarTela('sobre')">Sobre</button>
+</nav>
+
+<!-- LISTA -->
+<div id="lista" class="tela">
+  <h2>Lista de Livros</h2>
+
+  <input type="text" id="filtro" placeholder="Buscar por tema..." onkeyup="filtrar()">
+
+  <ul id="listaLivros"></ul>
+</div>
+
+<!-- CARRINHO -->
+<div id="carrinho" class="tela">
+  <h2>🛒 Carrinho</h2>
+  <ul id="itensCarrinho"></ul>
+</div>
+
+<!-- CONTATO -->
+<div id="contato" class="tela">
+  <h2>📞 Atendimento</h2>
+  <button onclick="enviarEmail()">Enviar Email</button>
+  <button onclick="abrirWhats()">WhatsApp</button>
+</div>
+
+<!-- SOBRE -->
+<div id="sobre" class="tela">
+  <h2>ℹ️ Sobre o App</h2>
+  <p>
+    Este aplicativo foi desenvolvido para fins educacionais.
+    Seu objetivo é demonstrar um catálogo de livros com carrinho de compra
+    e navegação entre telas usando HTML e JavaScript.
+  </p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

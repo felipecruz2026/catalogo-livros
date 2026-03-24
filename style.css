@@ -1,0 +1,22 @@
+body {
+  font-family: Arial;
+  text-align: center;
+}
+
+nav button {
+  margin: 5px;
+  padding: 10px;
+}
+
+.tela {
+  display: none;
+}
+
+#lista {
+  display: block;
+}
+
+li {
+  margin: 10px;
+  list-style: none;
+}
